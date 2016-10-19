@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="38px" viewBox="0 0 28 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>header_phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Source" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-395.000000, -116.000000)" fill="#F6A623">
+            <g id="header">
+                <g id="phone" transform="translate(395.000000, 115.000000)">
+                    <path d="M0,6.00691225 C0,3.24167097 2.24402624,1 5.00583887,1 L22.9941611,1 C25.7588096,1 28,3.23520515 28,6.00691225 L28,33.9930877 C28,36.758329 25.7559738,39 22.9941611,39 L5.00583887,39 C2.2411904,39 0,36.7647948 0,33.9930877 L0,6.00691225 Z M2,6.00235843 C2,4.34420165 3.34177063,3 4.99109042,3 L23.0089096,3 C24.6608432,3 26,4.34331243 26,6.00235843 L26,33.9976416 C26,35.6557983 24.6582294,37 23.0089096,37 L4.99109042,37 C3.33915679,37 2,35.6566876 2,33.9976416 L2,6.00235843 Z M2,7 L26,7 L26,9 L2,9 L2,7 Z M2,27 L26,27 L26,29 L2,29 L2,27 Z M14,35 C15.1045695,35 16,34.1045695 16,33 C16,31.8954305 15.1045695,31 14,31 C12.8954305,31 12,31.8954305 12,33 C12,34.1045695 12.8954305,35 14,35 Z" id="header_phone"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

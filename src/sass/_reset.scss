@@ -1,0 +1,69 @@
+@import "variables";
+
+* {margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; word-wrap: break-word;}
+table {border-collapse: collapse; width: 100%;}
+input {
+	&:focus {outline: none;}
+}
+img, table {border: none;}
+
+
+a {
+	&:link,&:visited {color: $link-color; text-decoration: underline; transition: all 0.5s ease-in-out;}
+	&:hover,&:active {color: $link-color-hover; text-decoration: none;}
+	
+}
+
+				
+button {outline: none; cursor: pointer;}
+svg:not(:root) {overflow: hidden;}
+
+
+header,footer,article,section,hgroup,nav,menu,aside,figure,main,video,address,picture,figcaption {display:block;}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 15px 0;
+	font: {
+	    family: 'BloggerSans-Medium', sans-serif;
+	    weight: normal; 
+	}
+}
+h1 {font-size: 32px;}
+h2 {font-size: 24px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
+ul, ol {list-style:none;}
+
+p {margin: 15px 0; line-height: 1.5;}
+
+img{width:auto\9;height:auto;max-width:100%;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+
+
+::placeholder {color: $placeholder-color;}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+input[type=search],
+textarea {
+	background: #fff; 
+	font: {
+	    family: 'BloggerSans', sans-serif;
+	    size: 14px;
+	  }
+	border: 1px solid #cbc3bf; 
+	padding: 12px 14px; 
+	color: $placeholder-color; 
+	width: 100%; 
+	height: 42px;
+	@include border-radius(3px);
+}
+
