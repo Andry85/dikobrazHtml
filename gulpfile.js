@@ -44,7 +44,7 @@ gulp.task('useref', function () {
     return gulp.src('src/*.html')
     	.pipe(useref())
     	// Минифицируем только CSS файлы
-    	.pipe(gulpIf('*.css', minifyCSS()))
+    	//.pipe(gulpIf('*.css', minifyCSS()))
 	    // Uglifies only if it's a Javascript file
 	    .pipe(gulpIf('*.js', uglify()))
         .pipe(gulp.dest('dist'));
@@ -66,7 +66,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('clean:dist', function(callback){
-  del(['dist/**/*', '!dist/img', '!dist/img/**/*'], callback)
+  del(['dist/**/*', '!dist/img', '!dist/img/**/*','!dist/fonts', '!dist/fonts/**/*'], callback)
 });
 
 gulp.task('default', function (callback) {
