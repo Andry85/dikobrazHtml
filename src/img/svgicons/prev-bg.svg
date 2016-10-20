@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>slider_arrow_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Source" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.200000003">
+        <g id="home" transform="translate(-182.000000, -483.000000)" fill="#000000">
+            <g id="banner" transform="translate(37.000000, 311.000000)">
+                <path d="M154.576967,178.911226 L147.41515,172.414521 C146.862455,171.861826 145.967215,171.861826 145.414521,172.414521 C144.861826,172.967215 144.861826,173.862435 145.414521,174.41515 L151.570701,180.00003 L145.414521,185.584871 C144.861826,186.137545 144.861826,187.032785 145.414521,187.585479 C145.967215,188.138174 146.862455,188.138174 147.41515,187.585479 L154.576967,181.088774 C154.875596,180.790145 155.007285,180.391078 154.98268,180.00001 C155.006638,179.608922 154.875596,179.209875 154.576967,178.911226 L154.576967,178.911226 Z" id="slider_arrow_left" transform="translate(149.992790, 180.000000) scale(-1, 1) translate(-149.992790, -180.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

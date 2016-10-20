@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>slider_arrow_right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Source" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.200000003">
+        <g id="home" transform="translate(-1208.000000, -483.000000)" fill="#000000">
+            <g id="banner" transform="translate(37.000000, 311.000000)">
+                <path d="M1180.57697,178.911226 L1173.41515,172.414521 C1172.86246,171.861826 1171.96722,171.861826 1171.41452,172.414521 C1170.86183,172.967215 1170.86183,173.862435 1171.41452,174.41515 L1177.5707,180.00003 L1171.41452,185.584871 C1170.86183,186.137545 1170.86183,187.032785 1171.41452,187.585479 C1171.96722,188.138174 1172.86246,188.138174 1173.41515,187.585479 L1180.57697,181.088774 C1180.8756,180.790145 1181.00728,180.391078 1180.98268,180.00001 C1181.00664,179.608922 1180.8756,179.209875 1180.57697,178.911226 L1180.57697,178.911226 Z" id="slider_arrow_right"></path>
+            </g>
+        </g>
+    </g>
+</svg>
