@@ -254,7 +254,7 @@ MAIN SECTION
 }
 .catalogList {
 	padding: 13px 0 62px 0;
-	&__item {
+	li {
 		width: 348px;
 		height: 190px;
 		margin: 28px -5px 0 28px;
@@ -271,6 +271,7 @@ MAIN SECTION
 		  vertical-align: middle;
 		}
 		a {
+			width: 90%;
 			display: inline-block;
   			vertical-align: middle;
   			color: #302e2c;
@@ -291,7 +292,7 @@ MAIN SECTION
 		}
 
 	}
-	&__item:nth-child(3n+1) {margin-left: 0;}
+	li:nth-child(3n+1) {margin-left: 0;}
 
 }
 .content {

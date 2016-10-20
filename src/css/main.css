@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* --------------------- 
+FONTS CONNECTION
+--------------------- */
 @font-face {
   font-family: 'BloggerSans';
   src: url("../fonts/BloggerSans.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSans.otf") format("opentype"), url("../fonts/BloggerSans.woff") format("woff"), url("../fonts/BloggerSans.ttf") format("truetype"), url("../fonts/BloggerSans.svg#BloggerSans") format("svg");
@@ -474,6 +477,9 @@ body {
   .inner:after {
     clear: both; }
 
+/* --------------------- 
+HEADER SECTION 
+--------------------- */
 .headerTop {
   background: #f9ebc8 url(../img/bg.png);
   padding: 0 0 11px 0; }
@@ -757,6 +763,9 @@ a.basket__link:hover {
   .navi li a.navi__link--cerulean {
     color: #4A90E2; }
 
+/* --------------------- 
+MAIN SECTION 
+--------------------- */
 .main {
   padding: 30px 0 0 0; }
 
@@ -837,7 +846,7 @@ a.basket__link:hover {
 
 .catalogList {
   padding: 13px 0 62px 0; }
-  .catalogList__item {
+  .catalogList li {
     width: 348px;
     height: 190px;
     margin: 28px -5px 0 28px;
@@ -847,29 +856,30 @@ a.basket__link:hover {
     display: inline-block;
     vertical-align: top;
     text-align: center; }
-    .catalogList__item:before {
+    .catalogList li:before {
       /* для IE8+ */
       content: "";
       display: inline-block;
       min-height: inherit;
       height: 100%;
       vertical-align: middle; }
-    .catalogList__item a {
+    .catalogList li a {
+      width: 90%;
       display: inline-block;
       vertical-align: middle;
       color: #302e2c;
       text-decoration: none; }
-      .catalogList__item a p {
+      .catalogList li a p {
         margin: 3px 0 0 0;
         font-family: 'BloggerSans-Bold';
         font-size: 20px; }
-      .catalogList__item a figure {
+      .catalogList li a figure {
         height: 127px;
         overflow: hidden;
         line-height: 127px; }
-      .catalogList__item a:hover {
+      .catalogList li a:hover {
         color: #f49c09; }
-  .catalogList__item:nth-child(3n+1) {
+  .catalogList li:nth-child(3n+1) {
     margin-left: 0; }
 
 .content {
@@ -884,6 +894,9 @@ a.basket__link:hover {
     font-size: 32px;
     padding: 0 0 10px 0; }
 
+/* --------------------- 
+FOOTER SECTION 
+--------------------- */
 .footerTop {
   background: url(../img/footerTop-bg.png);
   padding: 25px 0 23px 0; }
