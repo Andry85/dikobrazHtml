@@ -9,7 +9,7 @@ img, table {border: none;}
 
 
 a {
-	&:link,&:visited {color: $link-color; text-decoration: underline; transition: all 0.5s ease-in-out;}
+	&:link,&:visited {color: $link-color; text-decoration: underline; transition: all 0.2s ease-in-out;}
 	&:hover,&:active {color: $link-color-hover; text-decoration: none;}
 	
 }
