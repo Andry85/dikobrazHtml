@@ -10,7 +10,7 @@ img, table {border: none;}
 
 a {
 	&:link,&:visited {color: $link-color; text-decoration: underline; transition: all 0.2s ease-in-out;}
-	&:hover,&:active {color: $link-color-hover; text-decoration: none;}
+	&:hover,&:active,&:focus {color: $link-color-hover; text-decoration: none; outline: 0;}
 	
 }
 
@@ -60,13 +60,14 @@ textarea {
 	background: #fff; 
 	font: {
 	    family: 'BloggerSans', sans-serif;
-	    size: 14px;
+	    size: 16px;
 	  }
 	border: 1px solid #cbc3bf; 
-	padding: 12px 14px; 
+	padding: 8px 14px; 
 	color: $placeholder-color; 
 	width: 100%; 
 	height: 42px;
 	@include border-radius(3px);
 }
+textarea {resize: vertical;}
 

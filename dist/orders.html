@@ -9,9 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-<!--build:css css/main.min.css-->
-<link rel="stylesheet" href="css/main.css">
-<!--endbuild-->
+<link rel="stylesheet" href="css/main.min.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -131,115 +129,114 @@
         MAIN SECTION
         =========================== -->
 		<main class="main">
-			<!-- ===========================
-	        SLIDER SECTION
-	        =========================== -->
-			<div class="carusel">	
-				<div class="inner">		
-					<div class="owlWrap">
-						<div class="owl">
-							<div class="item">
-								<figure class="item__pic">
-									<img src="img/item__pic--01.png" alt="" title="">
-								</figure>
-								<div class="item__text">
-									<h2>ДЕТСКИЕ КОЛЯСКИ TUTIS ZIPPY CLASSIC</h2>
-									<p>Функциональность, проверенная временем Мягкие и уютные</p>
-								</div>
-							</div>
-							<div class="item">
-								<figure class="item__pic">
-									<img src="img/item__pic--01.png" alt="" title="">
-								</figure>
-								<div class="item__text">
-									<h2>ДЕТСКИЕ КОЛЯСКИ TUTIS ZIPPY CLASSIC</h2>
-									<p>Функциональность, проверенная временем Мягкие и уютные</p>
-								</div>
-							</div>
-							<div class="item">
-								<figure class="item__pic">
-									<img src="img/item__pic--01.png" alt="" title="">
-								</figure>
-								<div class="item__text">
-									<h2>ДЕТСКИЕ КОЛЯСКИ TUTIS ZIPPY CLASSIC</h2>
-									<p>Функциональность, проверенная временем Мягкие и уютные</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!--SLIDER SECTION END-->
 			<div class="inner">	
 				<!-- ===========================
-		        CATALOG SECTION
+		        PAGE SECTION
 		        =========================== -->
-				<div class="catalog">
-					<ul class="catalogList">
-						<li>
-							<a href="#" title="">
-								<figure>
-									<img src="img/products/cat_image_1.png" alt="" title="">
-								</figure>
-								<p>Коляски и автокресла</p>
-							</a>	
-						</li>
-						<li>
-							<a href="#" title="">
-								<figure>
-									<img src="img/products/cat_image_2.png" alt="" title="">
-								</figure>
-								<p>Спорт и отдых</p>
-							</a>	
-						</li>
-						<li>
-							<a href="#" title="">
-								<figure>
-									<img src="img/products/cat_image_3.png" alt="" title="">
-								</figure>
-								<p>Детская комната</p>
-							</a>	
-						</li>
-						<li>
-							<a href="#" title="">
-								<figure>
-									<img src="img/products/cat_image_4.png" alt="" title="">
-								</figure>
-								<p>Кормление и питание</p>
-							</a>	
-						</li>
-						<li>
-							<a href="#" title="">
-								<figure>
-									<img src="img/products/cat_image_5.png" alt="" title="">
-								</figure>
-								<p>Подгузники и гигиена</p>
-							</a>	
-						</li>
-						<li>
-							<a href="#" title="">
-								<figure>
-									<img src="img/products/cat_image_6.png" alt="" title="">
-								</figure>
-								<p>Игрушки</p>
-							</a>	
-						</li>
+				<div class="page">
+					<ul class="pathway">
+						<li><a href="#" title="">Главная</a></li>
+						<li>Личный кабинет</li>     
 					</ul>
-				</div><!--CATALOG SECTION END-->
+					<h1 class="page__title">Личный кабинет</h1>
+					<!-- ===========================
+			        PRIVATE SECTION
+			        =========================== -->
+					<div class="private">
+						<ul id="list" class="navTabs">
+							<li class="active"><a href="#">Мои заказы</a></li>
+							<li><a href="#">Скидки и бонусы</a></li>
+							<li><a href="#">Личные данные</a></li>
+						</ul>
+						<!-- ===========================
+				        TABS SECTION
+				        =========================== -->	
+						<div id="tabs" class="tabs">
+							<div class="tabs__panel active">
+								<div class="orders">
+									<table class="table">
+		                                <colgroup>
+		                                    <col class="table__numberOrder">
+		                                    <col class="table__numberDate">
+		                                    <col class="table__numberPrice">
+		                                    <col class="table__numberStatus">
+		                                    <col>
+		                                </colgroup>
+		                                <thead>
+		                                    <tr>
+		                                        <th>Номер заказа</th>
+		                                        <th>Дата заказа</th>
+		                                        <th>Сумма заказа</th>
+		                                        <th>Статус</th>
+		                                    </tr>
+		                                </thead>
+		                                <tbody>
+		                                    <tr>
+		                                    	<td><a class="table__order" href="#" title="">10004335</a></td>
+		                                        <td><span class="table__date">20.05.2016</span></td>
+		                                        <td><span class="table__price">3090<i>руб</i></span></td>
+		                                        <td><span class="table__status table__status--sended">Отправлен покупателю</span></td>
+		                                    </tr>
+		                                    <tr>
+		                                    	<td><a class="table__order" href="#" title="">10053312</a></td>
+		                                        <td><span class="table__date">15.04.2016</span></td>
+		                                        <td><span class="table__price">1240<i>руб</i></span></td>
+		                                        <td><span class="table__status table__status--formed">Формируется</span></td>
+		                                    </tr>
+		                                    <tr>
+		                                    	<td><a class="table__order" href="#" title="">10063242</a></td>
+		                                        <td><span class="table__date">04.02.2016</span></td>
+		                                        <td><span class="table__price">1450<i>руб</i></span></td>
+		                                        <td><span class="table__status table__status--canceled">Отменен</span></td>
+		                                    </tr>
+		                                </tbody>
+		                            </table>
+								</div>
+							</div>
+							<div class="tabs__panel">
+								2
+							</div>
+							<div class="tabs__panel">
+								<form method="post" action="#">
+									<div class="formWrap">
+										<div class="form">
+											<div class="form__col-1">
+												<div class="form__row">
+													<label>ФИО</label>
+													<input type="text" placeholder="Иванов  Иван Иваненко">
+												</div>
+												<div class="form__row">
+													<label>Телефон</label>
+													<input type="tel" placeholder="+7 (953) 666-77-88">
+												</div>
+												<div class="form__row">
+													<label>Email</label>
+													<input type="email" placeholder="ivanov@yandex.ru">
+												</div>
+											</div>
+											<div class="form__col-2">
+												<div class="form__row">
+													<label>Индекс</label>
+													<input type="text" placeholder="156000">
+												</div>
+												<div class="form__row">
+													<label>Город</label>
+													<input type="text" placeholder="Кострома">
+												</div>
+												<div class="form__row">
+													<label>Адрес</label>
+													<input type="text" placeholder="Советская, 54-66">
+												</div>
+											</div>	
+										</div>
+										<button class="btn">Сохранить</button>
+									</div>
+								</form>
+							</div>
+						</div><!--TABS SECTION END-->
+					</div><!--PRIVATE SECTION END-->
+				</div><!--PAGE SECTION END-->
 			</div>
-			<!-- ===========================
-	        CONTENT SECTION
-	        =========================== -->
-			<div class="content">
-				<div class="inner">
-					<article class="content__text">
-						<h1 class="content__title">Интернет-магазин товаров для детей</h1>
-						<p>«Дикобраз» первый интернет магазин для будущих мам и малышей сочетающий в себе широкий ассортимент товаров, привлекательные цены, выгодные условия доставки, а так же индивидуальный подход к каждому покупателю.</p>
-						<p>В нашем интернет магазине вы можете купить, по низкой цене, подгузники, крема и присыпки для малышей, масла и мягкие детские шампуни, средства для кормления (детская посуда, поильники, бутылочки, пустышки), музыкальные и развивающие игрушки (макси пазлы, развивающие коврики), а так же средства гигиены как для будущих мам, так и для тех, кто уже переживает эти счастливые моменты. Так же на страницах нашего интернет магазина мы предлагаем Вам приобрести удобные и маневренные детские коляски и комфортные и безопасные детские кресла.</p>
-						<p>Мы реализуем продукцию, как со своего склада, так и на заказ. Если нужного для Вас товара не окажется в наличии, мы, в кратчайшие сроки, привезем то, что необходимо именно Вам.</p>
-						<p>У нас Вы можете купить все необходимое для счастливого и беззаботного детства, не выходя из дома. Это означает, что Вы сможете уделять больше внимания своему малышу и не упустите самые важные моменты, когда будет произнесено первое свое слово или совершен первый шажок в жизни.</p>
-					</article>
-				</div>
-			</div><!--CONTENT SECTION END-->
 		</main><!--MAIN SECTION END-->
 	</div><!--WRAP SECTION END-->    
 	<!-- ===========================
@@ -300,10 +297,6 @@
     =========================== -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-	<!--build:js js/main.min.js -->
-		<script src="js/owl.carousel.js"></script>
-		<script src="js/placeholders.min.js"></script>
-		<script src="js/main.js"></script>
-	<!-- endbuild -->
+	<script src="js/main.min.js"></script>
 </body>
 </html>
