@@ -22,6 +22,9 @@ $(function() {
 						/* Start hack for IE8  */
 	/********************************************************/
 	$('.catalogList li:nth-child(3n+1)').css('marginLeft','0');
+	$('.productsList li:nth-child(4n+1)').css('marginLeft','0');
+	$('.table tr:nth-child(2n+1) td').css('background','#FBF7F5');
+	$('.table tr td:last-child').css('paddingRight','1%');
 	/*********************************************************/
 						/* End hack for IE8  */
 	/********************************************************/
