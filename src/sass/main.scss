@@ -1,7 +1,9 @@
+@import "variables";
 @import "fonts";
 @import "owl.transitions";
+@import "chosen";
 @import "reset";
-@import "variables";
+
 
 
 
@@ -979,12 +981,103 @@ TEXT SECTION
 .text {
 	&:before,&:after {content: ""; display: table;}
 	&:after {clear: both;}
-	&__img {margin: 25px 0; clear: both;}
+	&__img {margin: 20px 0; clear: both;}
 	&__img--right {float: right; margin-left: 25px;}
 	&__img--left {float: left; margin-right: 25px;}
+	p {line-height: 1.2; margin: 20px 0;}
 } 
+.textInside {
+	padding: 0 0 20px 0;
+	&__title {font-size: 18px;}
+	&__list {
+		padding: 0 0 4px 0;
+		line-height: 1.2;
+		dt {margin: 0 0 21px 0;}
+		dd {
+			position: relative;
+			padding: 0 0 0 20px;
+			margin: 20px 0 0 10px;
+			&:before {
+				content:''; 
+				background: #f39901;
+				@include border-radius(50%);
+				width: 7px;
+				height: 7px;
+				position: absolute;
+				left: 0;
+				top: 7px;
+			}
+		}
+	}
+}
+.photo {
+	li {
+		width: 31.45%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 8px -4px 8px 2.825%;
+		&:nth-child(3n+1) {margin-left: 0;}
+	}
+}
+.similar {
+	&:before,&:after {content: ""; display: table;}
+	&:after {clear: both;}
+	padding: 11px 19px 16px 19px;
+	border: 1px dashed #c4bbb7;
+	@include border-radius(3px);
+	&__title {margin: 0 0 4px 0; font-size: 18px;}
+	&__list {
+		li {
+			padding: 4px 10px 4px 0;
+			width: 46.28%;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 -4px 0 0;
+			&:nth-child(2n+1) {width: 53.72%;}
+		}
+	}
+}
 
+/* --------------------- 
+CATALOGPAGE SECTION 
+--------------------- */
+.catalogPage {
+	&__col-1 {width: 76.91%; float: left;}
+	&__col-2 {width: 23.09%; float: right;}
+	&__title {
+		&:before,&:after {content: ""; display: table;}
+		&:after {clear: both;}
+	}
+}
 
+.view {
+	&:before,&:after {content: ""; display: table;}
+	&:after {clear: both;}
+	&__count {float: left;}
+	&__sort {float: right;}
+	&__list {
+		dt {float: left; color: #6A6561; padding: 0 9px 0 0;}
+		dd {
+			float: left;
+			margin: 0 0 0 3px;
+			& > a {
+				color: #6A6561;
+				text-decoration: none;
+				@include border-radius(3px);
+				padding: 0 7px 0 6px;
+				display: block;
+				border: 1px solid #fff;
+
+			}
+			&.activ > a,& > a:hover {
+				background: #f2edea;
+				border-color: #cac3bf;
+				
+			}
+			
+		}
+	}
+}
 
 
 
