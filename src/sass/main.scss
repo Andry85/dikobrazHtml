@@ -1,7 +1,4 @@
 @import "variables";
-@import "fonts";
-@import "owl.transitions";
-@import "chosen";
 @import "reset";
 
 
@@ -820,7 +817,12 @@ PRIVATE SECTION
 		margin: 4px 0 0 0;
 		min-width: 76px;
 		&:hover {background: #cb8818;}
-
+	}
+	&--main {
+		li {width: 30.02%; margin-left: 3.31%;
+			&:nth-child(4n+1) {margin-left: 3.31%;}
+			&:nth-child(3n+1) {margin-left: 0;}
+		}
 	}
 }
 .no-cssgradients .productsList {
@@ -1051,13 +1053,15 @@ CATALOGPAGE SECTION
 }
 
 .view {
+	padding: 17px 0 30px 0;
 	&:before,&:after {content: ""; display: table;}
 	&:after {clear: both;}
 	&__count {float: left;}
-	&__sort {float: right;}
+	&__sort {float: right; padding: 0 20px 0 0;}
 	&__list {
 		dt {float: left; color: #6A6561; padding: 0 9px 0 0;}
 		dd {
+			&.view__item {padding-right: 5px;}
 			float: left;
 			margin: 0 0 0 3px;
 			& > a {
@@ -1067,17 +1071,17 @@ CATALOGPAGE SECTION
 				padding: 0 7px 0 6px;
 				display: block;
 				border: 1px solid #fff;
-
 			}
 			&.activ > a,& > a:hover {
 				background: #f2edea;
-				border-color: #cac3bf;
-				
+				border-color: #cac3bf;	
 			}
 			
 		}
 	}
 }
+.catalogProducts {}
+
 
 
 
