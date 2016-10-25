@@ -1,5 +1,7 @@
 @import "variables";
 
+html, body {width:100%; height:100%;}
+
 * {margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; word-wrap: break-word;}
 table {border-collapse: collapse; width: 100%;}
 input {
@@ -24,6 +26,7 @@ header,footer,article,section,hgroup,nav,menu,aside,figure,main,video,address,pi
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 15px 0;
+	line-height: 1.3;
 	font: {
 	    family: 'BloggerSans-Medium';
 	    weight: normal; 

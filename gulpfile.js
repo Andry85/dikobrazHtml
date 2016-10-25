@@ -65,8 +65,13 @@ gulp.task('fonts', function() {
   .pipe(gulp.dest('dist/fonts'))
 });
 
+gulp.task('js', function() {
+  return gulp.src('src/js/**/*')
+  .pipe(gulp.dest('dist/js'))
+});
+
 gulp.task('clean:dist', function(callback){
-  del(['dist/**/*', '!dist/img', '!dist/img/**/*','!dist/fonts', '!dist/fonts/**/*'], callback)
+  del(['dist/**/*', '!dist/img', '!dist/img/**/*','!dist/fonts', '!dist/fonts/**/*','!dist/js', '!dist/js/**/*'], callback)
 });
 
 gulp.task('default', function (callback) {
@@ -74,6 +79,6 @@ gulp.task('default', function (callback) {
 });
 
 gulp.task('build', function (callback) {
-  runSequence(['clean:dist', 'sass', 'useref', 'images', 'fonts'], callback)
+  runSequence(['clean:dist', 'sass', 'useref', 'images', 'js', 'fonts'], callback)
 });
 
