@@ -83,6 +83,20 @@ $(function() {
 						/* End PHOTO SLIDER PRODUCTMAIN  */
 	/********************************************************/
 
-	 
+	/*********************************************************/
+						/* Start CARUSEL  */
+	/********************************************************/
+	$(".slideProducts ul").owlCarousel({
+		stopOnHover : true,
+		navigation: true,
+		pagination: false,
+		singleItem : false,
+		autoHeight : true,
+		slideSpeed : 300,
+		items : 4
+	});
+	/*********************************************************/
+						/* End CARUSEL  */
+	/********************************************************/
 
 });
