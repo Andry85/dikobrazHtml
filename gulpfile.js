@@ -10,6 +10,9 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
+var svgSprite = require('gulp-svg-sprites');
+
+
 
 
 
@@ -23,7 +26,19 @@ gulp.task('sass', function(){
     }))
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function(){
+
+
+gulp.task('sprites', function () {
+    return gulp.src('src/img/svgicons/*.svg')
+        .pipe(svgSprite())
+        .pipe(gulp.dest("src/img/spites"));
+});
+
+
+
+
+
+gulp.task('watch', ['browserSync', 'sass', 'sprites'], function(){
   gulp.watch('src/sass/**/*.scss', ['sass']); 
   // Обновляем браузер при любых изменениях в HTML или JS
   gulp.watch('src/*.html', browserSync.reload); 
@@ -77,6 +92,9 @@ gulp.task('clean:dist', function(callback){
 gulp.task('default', function (callback) {
   runSequence(['sass', 'browserSync', 'watch'], callback)
 });
+
+
+
 
 gulp.task('build', function (callback) {
   runSequence(['clean:dist', 'sass', 'useref', 'images', 'js', 'fonts'], callback)

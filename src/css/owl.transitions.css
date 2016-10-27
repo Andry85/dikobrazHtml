@@ -52,13 +52,19 @@
 
 
 .owl-buttons {position: absolute; left: 0; width: 100%; z-index: 10;}
-.owl-buttons > div {position: absolute; bottom: 159px; width: 10px; height: 16px; text-indent: -9000px; overflow: hidden; cursor: pointer;}
+.owl-buttons > div {position: absolute; bottom: 159px; font-size: 10px; width: 1em; height: 1.6em; text-indent: -9000px; overflow: hidden; cursor: pointer;}
 .owl-buttons > div:hover {opacity: 0.6;}
-.owl-buttons > div.owl-prev {background: url(../img/svgicons/prev-bg.svg) no-repeat; left: 19px;}
-.owl-buttons > div.owl-next {background: url(../img/svgicons/next-bg.svg) no-repeat; right: 19px;}
+.owl-buttons > div.owl-prev {background: url(../img/svgicons/prev-bg.svg) no-repeat; 
+  background: url(../img/spites/svg/sprite.svg) 0em -16em no-repeat;
+  left: 19px;
+}
+.owl-buttons > div.owl-next {
+  background: url(../img/spites/svg/sprite.svg) 0em -14.4em no-repeat;
+  right: 19px;
+}
 
-html.no-svg .owl-buttons > div.owl-prev {background: url(../img/pngicons/prev-bg.png) no-repeat;}
-html.no-svg .owl-buttons > div.owl-next {background: url(../img/pngicons/next-bg.png) no-repeat;}
+html.no-svg .owl-buttons > div.owl-prev {background-image: url(../img/spites/svg/sprite.png);}
+html.no-svg .owl-buttons > div.owl-next {background-image: url(../img/spites/svg/sprite.png);}
 
 
 
