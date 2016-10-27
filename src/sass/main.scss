@@ -36,7 +36,7 @@ HEADER SECTION
 .headerTop {background: #f9ebc8 url(../img/bg.png); padding: 0 0 11px 0;
 	&__col-1 {width: 34.09%; float: left;}
 	&__col-2 {width: 40.18%; float: left;}
-	&__col-3 {width: 25.73%; float: left; text-align: right;}
+	&__col-3 {width: 25.73%; float: right; text-align: right;}
 }
 .headerMiddle {
 	background-image: linear-gradient(1deg, #FFFFFF 2%, #F5E9E1 100%);
@@ -153,8 +153,10 @@ HEADER SECTION
 }
 a.logo {background: url(../img/logo.png) no-repeat; width: 172px; height: 120px; display: block; text-decoration: none; text-indent: -9000px; overflow: hidden;}
 .infoList {
-	li {width: 275px; float: left; padding: 36px 0 0 0;}
-	li:first-child {width: 310px;}
+	&:before,&:after {content: ""; display: table;}
+	&:after {clear: both;}
+	li {width: 42.64%; float: left; padding: 36px 0 0 0;}
+	li:first-child {width: 48.06%;}
 	&__phone { 
 		font-size: 10px;
 		background: url(../img/spites/svg/sprite.svg) 0em -10.6em no-repeat;
@@ -180,7 +182,7 @@ a.logo {background: url(../img/logo.png) no-repeat; width: 172px; height: 120px;
 	}
 	&__callback:hover {transform: scale(1.2);}
 	html.no-svg &__callback {background-image: url(../img/spites/svg/sprite.png);}
-	&__tell {padding: 0 0 0 54px; margin: 0; color: #302e2c;
+	&__tell {padding: 0 10px 0 54px; margin: 0; color: #302e2c;
 			font: {
 				    family: 'BloggerSans-Medium';
 				    size: 20px;
@@ -226,7 +228,7 @@ a.logo {background: url(../img/logo.png) no-repeat; width: 172px; height: 120px;
 				    size: 16px;
 			}
 	}
-	&__sum {display: block; padding: 0 0 0 56px; color: #23211f; text-transform: uppercase; line-height: 1.0;
+	&__sum {display: block; padding: 0 10px 0 56px; color: #23211f; text-transform: uppercase; line-height: 1.0;
 			font: {
 					    family: 'BloggerSans-Medium';
 					    size: 20px;

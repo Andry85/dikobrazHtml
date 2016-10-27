@@ -190,7 +190,7 @@ HEADER SECTION
     float: left; }
   .headerTop__col-3 {
     width: 25.73%;
-    float: left;
+    float: right;
     text-align: right; }
 
 .headerMiddle {
@@ -329,13 +329,20 @@ a.logo {
   text-indent: -9000px;
   overflow: hidden; }
 
+.infoList:before, .infoList:after {
+  content: "";
+  display: table; }
+
+.infoList:after {
+  clear: both; }
+
 .infoList li {
-  width: 275px;
+  width: 42.64%;
   float: left;
   padding: 36px 0 0 0; }
 
 .infoList li:first-child {
-  width: 310px; }
+  width: 48.06%; }
 
 .infoList__phone {
   font-size: 10px;
@@ -374,7 +381,7 @@ html.no-svg .infoList__callback {
   background-image: url(../img/spites/svg/sprite.png); }
 
 .infoList__tell {
-  padding: 0 0 0 54px;
+  padding: 0 10px 0 54px;
   margin: 0;
   color: #302e2c;
   font-family: 'BloggerSans-Medium';
@@ -429,7 +436,7 @@ html.no-svg .infoList__callback {
     font-size: 16px; }
   .basket__sum {
     display: block;
-    padding: 0 0 0 56px;
+    padding: 0 10px 0 56px;
     color: #23211f;
     text-transform: uppercase;
     line-height: 1.0;
