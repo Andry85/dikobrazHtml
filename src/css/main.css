@@ -229,9 +229,6 @@ HEADER SECTION
   transition: all 0.2s ease-in-out; }
 
 .search__btn:hover, .search__btn:focus {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
   outline: none; }
 
 html.no-svg .search__btn {
@@ -1096,22 +1093,6 @@ PRIVATE SECTION
     .prod__price i {
       font-style: normal;
       padding: 0 0 0 9px; }
-  .prod__btn {
-    float: right;
-    font-family: 'BloggerSans-Medium';
-    font-size: 15px;
-    color: #fff !important;
-    background: #F5A623;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
-    border: 0;
-    padding: 0 10px;
-    line-height: 26px;
-    text-align: center;
-    margin: 4px 0 0 0;
-    min-width: 76px; }
-    .prod__btn:hover {
-      background: #cb8818; }
   .prod__title {
     margin: 0;
     font-size: 16px;
@@ -1161,7 +1142,9 @@ PRIVATE SECTION
             border-radius: 3px;
     border: 0;
     padding: 0 10px;
+    height: 26px;
     line-height: 26px;
+    display: block;
     text-align: center;
     margin: 4px 0 0 0;
     min-width: 76px; }
@@ -1221,8 +1204,10 @@ BASKETPAGE SECTION
     .checkboxWrap input:not(checked) + label {
       position: relative;
       padding: 0 0 0 38px;
+      display: block;
       line-height: 25px;
-      color: #68625e; }
+      color: #68625e;
+      overflow: hidden; }
     .checkboxWrap input:not(checked) + label:before {
       content: '';
       background: url(../img/checkbox-bg.png) no-repeat;
@@ -1230,7 +1215,7 @@ BASKETPAGE SECTION
       height: 25px;
       position: absolute;
       left: 0;
-      top: -1px; }
+      top: 0; }
     .checkboxWrap input:checked + label:before {
       background: url(../img/checkbox-checked-bg.png) no-repeat; }
 
@@ -1255,7 +1240,8 @@ BASKETPAGE SECTION
     opacity: 0; }
     .radio:not(checked) + label {
       position: relative;
-      padding: 2px 15px 0 35px;
+      padding: 0 15px 0 35px;
+      line-height: 25px;
       display: block;
       z-index: 10; }
       .radio:not(checked) + label:before {
@@ -1396,7 +1382,7 @@ TEXT SECTION
   width: 31.45%;
   display: inline-block;
   vertical-align: top;
-  margin: 8px -4px 8px 2.825%; }
+  margin: 8px -5px 8px 2.6%; }
   .photo li:nth-child(3n+1) {
     margin-left: 0; }
 
@@ -1507,7 +1493,7 @@ CATALOGPAGE SECTION
       padding: 0 0 5px 0;
       font-family: 'BloggerSans-Medium'; }
     .settings__list dd {
-      padding: 4px 0; }
+      padding: 6px 0; }
       .settings__list dd .checkboxWrap input {
         width: 18px;
         height: 18px; }
@@ -1519,8 +1505,7 @@ CATALOGPAGE SECTION
           content: '';
           background: url(../img/checkbox-small-bg.png) no-repeat;
           width: 18px;
-          height: 18px;
-          top: 3px; }
+          height: 18px; }
         .settings__list dd .checkboxWrap input:checked + label:before {
           background: url(../img/checkbox-small-checked-bg.png) no-repeat; }
   .settings__control {

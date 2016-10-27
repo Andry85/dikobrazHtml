@@ -96,7 +96,7 @@ HEADER SECTION
 
 		transition: all 0.2s ease-in-out;
 	}
-	&__btn:hover,&__btn:focus {transform: scale(1.5); outline: none;}
+	&__btn:hover,&__btn:focus {outline: none;}
 	html.no-svg &__btn {background-image: url(../img/spites/svg/sprite.png);}
 }
 .reg {
@@ -889,23 +889,7 @@ PRIVATE SECTION
 			padding: 0 0 0 9px;
 		}
 	}
-	&__btn {
-		float: right;
-		font: {
-		    family: 'BloggerSans-Medium';
-		    size: 15px;
-		}
-		color: #fff!important;
-		background: #F5A623;
-		@include border-radius(3px);
-		border: 0;
-		padding: 0 10px;
-		line-height: 26px;
-		text-align: center;
-		margin: 4px 0 0 0;
-		min-width: 76px;
-		&:hover {background: #cb8818;}
-	}&__title {margin: 0; font-size: 16px; padding: 17px 0 5px 0; color: #000;}
+	&__title {margin: 0; font-size: 16px; padding: 17px 0 5px 0; color: #000;}
 	&__text {
 		height: 98px;
 		overflow: hidden;
@@ -949,7 +933,9 @@ PRIVATE SECTION
 		@include border-radius(3px);
 		border: 0;
 		padding: 0 10px;
+		height: 26px;
 		line-height: 26px;
+		display: block;
 		text-align: center;
 		margin: 4px 0 0 0;
 		min-width: 76px;
@@ -1000,8 +986,8 @@ BASKETPAGE SECTION
 	input {vertical-align: top; width: 25px; height: 25px; margin: 0 3px 0 0;
 		+ label {cursor: pointer;}
 		&:not(checked) {position: absolute; opacity: 0;}
-		&:not(checked) + label {position: relative; padding: 0 0 0 38px; line-height: 25px; color: #68625e;}
-		&:not(checked) + label:before {content: ''; background: url(../img/checkbox-bg.png) no-repeat; width: 25px; height: 25px; position: absolute; left: 0; top: -1px;}
+		&:not(checked) + label {position: relative; padding: 0 0 0 38px; display: block; line-height: 25px; color: #68625e; overflow: hidden;}
+		&:not(checked) + label:before {content: ''; background: url(../img/checkbox-bg.png) no-repeat; width: 25px; height: 25px; position: absolute; left: 0; top: 0;}
 		&:checked + label:before {background: url(../img/checkbox-checked-bg.png) no-repeat;}
 	}
 }
@@ -1025,7 +1011,8 @@ BASKETPAGE SECTION
 		opacity: 0;
 		& + label {
 			position: relative;
-			padding: 2px 15px 0 35px;
+			padding: 0 15px 0 35px;
+			line-height: 25px;
 			display: block;
 			z-index: 10;
 			&:before {
@@ -1150,7 +1137,7 @@ TEXT SECTION
 		width: 31.45%;
 		display: inline-block;
 		vertical-align: top;
-		margin: 8px -4px 8px 2.825%;
+		margin: 8px -5px 8px 2.6%;
 		&:nth-child(3n+1) {margin-left: 0;}
 	}
 }
@@ -1240,11 +1227,11 @@ CATALOGPAGE SECTION
 			}
 		}
 		dd {
-			padding: 4px 0;
+			padding: 6px 0;
 			.checkboxWrap {
 				input {width: 18px; height: 18px; 
 					&:not(checked) + label {padding: 0 0 0 29px; color: #544e4a; line-height: 18px;}
-					&:not(checked) + label:before {content: ''; background: url(../img/checkbox-small-bg.png) no-repeat; width: 18px; height: 18px; top: 3px;}
+					&:not(checked) + label:before {content: ''; background: url(../img/checkbox-small-bg.png) no-repeat; width: 18px; height: 18px;}
 					&:checked + label:before {background: url(../img/checkbox-small-checked-bg.png) no-repeat;}
 				}
 			}
